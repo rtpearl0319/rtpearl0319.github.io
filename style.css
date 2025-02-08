@@ -1,0 +1,83 @@
+html {
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    min-height: 100svh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    background-image: url('images/Climbing/Uncropped/Climbing-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.photography{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    background-color: #141414;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width:48%;
+    padding: .5%;
+    height: auto;
+}
+nav{
+    background-color: #141414;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    align-items: center;
+    list-style: none;
+}
+nav li{
+    height: 2.5rem;
+}
+nav a{
+    height: 100%;
+    padding: 0 2rem;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    color: #909090;
+
+    transition: all .25s;
+}
+nav a:hover{
+    color: white;
+    background-color: #404040;
+}
+nav li:first-child{
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-right: auto;
+}
+
+@media (max-width: 700px) {
+    .gallery img{
+        width: 100%;
+        padding-inline: 0;
+    }
+}
