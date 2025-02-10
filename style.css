@@ -6,10 +6,13 @@ html {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 }
 *{
     margin: 0;
     padding: 0;
+    font-size: 1rem;
 }
 .home{
     min-height: 100svh;
@@ -71,13 +74,24 @@ nav a:hover{
 }
 nav li:first-child{
     font-style: normal;
-    font-size: 1.5rem;
     margin-right: auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
+    nav li{
+        height: 5vh;
+    }
+    nav a{
+        font-size: 2rem;
+    }
     .gallery img{
         width: 100%;
-        padding-inline: 0;
+        padding: 2vh 0 2vh 0;
+    }
+    .gallery img:first-child{
+        padding-top: 0;
+    }
+    .gallery img:last-child{
+        padding-bottom: 0;
     }
 }
