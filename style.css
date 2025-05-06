@@ -45,7 +45,7 @@ html {
 nav{
     background-color: #141414;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    min-height: 5vh;
+    min-height: 10vh;
 }
 nav ul{
     display: flex;
