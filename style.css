@@ -45,6 +45,7 @@ html {
 nav{
     background-color: #141414;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    min-height: 5vh;
 }
 nav ul{
     display: flex;
@@ -79,10 +80,10 @@ nav li:first-child{
 
 @media (max-width: 1024px) {
     nav li{
-        height: 5vh;
+        min-height: 10vh;
     }
     nav a{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .gallery img{
         width: 100%;
